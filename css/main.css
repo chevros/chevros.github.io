@@ -10,6 +10,21 @@ body{
   margin: auto;
   width: 80%;
 }
+.social-media-icon li{
+  display: inline-block;
+  float: right;
+  position: relative;
+  line-height: 100px;
+}
+.social-media-icon a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 20px;
+}
+.social-media-icon a:hover{
+  color: #3498db;
+}
 .header{
   height: 100px;
   background: #34495e;
