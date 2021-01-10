@@ -1,0 +1,82 @@
+/* navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand {
+    font-family: viga;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand, .nav-link {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* jumbotron */
+
+.jumbotron{
+    background: url(../../img/sarah.jpg) top center fixed;
+    background-size: cover;
+    padding-top: 10em;
+    padding-bottom: 20em;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgb(255, 234, 175),rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: #fff;
+    text-align: center;
+    margin-top: 150px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 40px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+
+
+/* desktop version */
+
+@media (min-width: 992px) { 
+
+    /* navbar */
+
+    .navbar-brand, .nav-link {
+        color: #fff !important;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+    }
+    
+    /* jumbotron */
+
+    .jumbotron{
+        background: url(../../img/sarah.jpg) top center fixed;
+        background-size: cover;
+        padding-top: 10em;
+        padding-bottom: 20em;
+        margin-top: -80px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+ }
